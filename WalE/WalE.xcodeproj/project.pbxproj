@@ -9,25 +9,105 @@
 /* Begin PBXBuildFile section */
 		A354707E27DB336C008F7A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354707D27DB336C008F7A36 /* AppDelegate.swift */; };
 		A354708027DB336C008F7A36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354707F27DB336C008F7A36 /* SceneDelegate.swift */; };
-		A354708227DB336C008F7A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354708127DB336C008F7A36 /* ViewController.swift */; };
 		A354708527DB336C008F7A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A354708327DB336C008F7A36 /* Main.storyboard */; };
 		A354708727DB3370008F7A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A354708627DB3370008F7A36 /* Assets.xcassets */; };
 		A354708A27DB3370008F7A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A354708827DB3370008F7A36 /* LaunchScreen.storyboard */; };
+		A354709827DB3559008F7A36 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709727DB3559008F7A36 /* MockURLProtocol.swift */; };
+		A354709B27DB35A9008F7A36 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709A27DB35A9008F7A36 /* ParameterEncoding.swift */; };
+		A354709D27DB35BA008F7A36 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709C27DB35BA008F7A36 /* URLParameterEncoder.swift */; };
+		A354709F27DB35C7008F7A36 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709E27DB35C7008F7A36 /* JSONParameterEncoder.swift */; };
+		A35470A827DB35F5008F7A36 /* WalETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470A727DB35F5008F7A36 /* WalETests.swift */; };
+		A35470AF27DB3613008F7A36 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470AE27DB3613008F7A36 /* EndPointType.swift */; };
+		A35470B127DB3620008F7A36 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B027DB3620008F7A36 /* Router.swift */; };
+		A35470B327DB362B008F7A36 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B227DB362B008F7A36 /* HTTPMethod.swift */; };
+		A35470B527DB3636008F7A36 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B427DB3636008F7A36 /* HTTPTask.swift */; };
+		A35470B727DB3640008F7A36 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B627DB3640008F7A36 /* Parser.swift */; };
+		A35470B927DB364E008F7A36 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B827DB364E008F7A36 /* NetworkLogger.swift */; };
+		A35470BC27DB366C008F7A36 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470BB27DB366C008F7A36 /* NetworkManager.swift */; };
+		A35470C127DB5471008F7A36 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470C027DB5470008F7A36 /* HomeViewModel.swift */; };
+		A35470C427DB5486008F7A36 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470C327DB5486008F7A36 /* HomeViewController.swift */; };
+		A35470C727DB60D2008F7A36 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470C627DB60D2008F7A36 /* HomeAPI.swift */; };
+		A35470C927DB6249008F7A36 /* HomeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470C827DB6249008F7A36 /* HomeNetworkManager.swift */; };
+		A35470CC27DB627C008F7A36 /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470CB27DB627C008F7A36 /* ApodModel.swift */; };
+		A35470CF27DB6B72008F7A36 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470CE27DB6B72008F7A36 /* Storage.swift */; };
+		A35470D227DB6DE7008F7A36 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470D127DB6DE7008F7A36 /* Encodable+Extension.swift */; };
+		A35470D627DB8C49008F7A36 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470D527DB8C49008F7A36 /* Date+Extension.swift */; };
+		A35470D827E08014008F7A36 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470D727E08014008F7A36 /* RouterTests.swift */; };
+		A35470D927E084E7008F7A36 /* HomeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470C827DB6249008F7A36 /* HomeNetworkManager.swift */; };
+		A35470DA27E084F8008F7A36 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709727DB3559008F7A36 /* MockURLProtocol.swift */; };
+		A35470DB27E084FF008F7A36 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B027DB3620008F7A36 /* Router.swift */; };
+		A35470DC27E0850D008F7A36 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709A27DB35A9008F7A36 /* ParameterEncoding.swift */; };
+		A35470DD27E08516008F7A36 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709C27DB35BA008F7A36 /* URLParameterEncoder.swift */; };
+		A35470DF27E08535008F7A36 /* TestDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470DE27E08535008F7A36 /* TestDataHelper.swift */; };
+		A35470E027E0855F008F7A36 /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470CB27DB627C008F7A36 /* ApodModel.swift */; };
+		A35470E127E08562008F7A36 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470D127DB6DE7008F7A36 /* Encodable+Extension.swift */; };
+		A35470E227E08565008F7A36 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470D527DB8C49008F7A36 /* Date+Extension.swift */; };
+		A35470E327E08567008F7A36 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470CE27DB6B72008F7A36 /* Storage.swift */; };
+		A35470E427E0856C008F7A36 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470BB27DB366C008F7A36 /* NetworkManager.swift */; };
+		A35470E527E0856E008F7A36 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470AE27DB3613008F7A36 /* EndPointType.swift */; };
+		A35470E627E08573008F7A36 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B227DB362B008F7A36 /* HTTPMethod.swift */; };
+		A35470E727E08576008F7A36 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B427DB3636008F7A36 /* HTTPTask.swift */; };
+		A35470E827E08579008F7A36 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B627DB3640008F7A36 /* Parser.swift */; };
+		A35470E927E0857D008F7A36 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470B827DB364E008F7A36 /* NetworkLogger.swift */; };
+		A35470EA27E08585008F7A36 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354709E27DB35C7008F7A36 /* JSONParameterEncoder.swift */; };
+		A35470EB27E08590008F7A36 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470C627DB60D2008F7A36 /* HomeAPI.swift */; };
+		A35470EC27E08596008F7A36 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470C027DB5470008F7A36 /* HomeViewModel.swift */; };
+		A35470EE27E09E04008F7A36 /* viewcontroller+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35470ED27E09E03008F7A36 /* viewcontroller+extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A35470A927DB35F5008F7A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A354707227DB336C008F7A36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A354707927DB336C008F7A36;
+			remoteInfo = WalE;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A354707A27DB336C008F7A36 /* WalE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A354707D27DB336C008F7A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A354707F27DB336C008F7A36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A354708127DB336C008F7A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A354708427DB336C008F7A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A354708627DB3370008F7A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A354708927DB3370008F7A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A354708B27DB3370008F7A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A354709727DB3559008F7A36 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		A354709A27DB35A9008F7A36 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		A354709C27DB35BA008F7A36 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		A354709E27DB35C7008F7A36 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		A35470A527DB35F5008F7A36 /* WalETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35470A727DB35F5008F7A36 /* WalETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalETests.swift; sourceTree = "<group>"; };
+		A35470AE27DB3613008F7A36 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		A35470B027DB3620008F7A36 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A35470B227DB362B008F7A36 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		A35470B427DB3636008F7A36 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		A35470B627DB3640008F7A36 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		A35470B827DB364E008F7A36 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		A35470BB27DB366C008F7A36 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A35470C027DB5470008F7A36 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A35470C327DB5486008F7A36 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A35470C627DB60D2008F7A36 /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		A35470C827DB6249008F7A36 /* HomeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkManager.swift; sourceTree = "<group>"; };
+		A35470CB27DB627C008F7A36 /* ApodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
+		A35470CE27DB6B72008F7A36 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A35470D127DB6DE7008F7A36 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		A35470D527DB8C49008F7A36 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		A35470D727E08014008F7A36 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		A35470DE27E08535008F7A36 /* TestDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataHelper.swift; sourceTree = "<group>"; };
+		A35470ED27E09E03008F7A36 /* viewcontroller+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewcontroller+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A354707727DB336C008F7A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35470A227DB35F5008F7A36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A354707C27DB336C008F7A36 /* WalE */,
+				A35470A627DB35F5008F7A36 /* WalETests */,
 				A354707B27DB336C008F7A36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A354707A27DB336C008F7A36 /* WalE.app */,
+				A35470A527DB35F5008F7A36 /* WalETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +138,164 @@
 		A354707C27DB336C008F7A36 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
-				A354707D27DB336C008F7A36 /* AppDelegate.swift */,
-				A354707F27DB336C008F7A36 /* SceneDelegate.swift */,
-				A354708127DB336C008F7A36 /* ViewController.swift */,
-				A354708327DB336C008F7A36 /* Main.storyboard */,
-				A354708627DB3370008F7A36 /* Assets.xcassets */,
-				A354708827DB3370008F7A36 /* LaunchScreen.storyboard */,
-				A354708B27DB3370008F7A36 /* Info.plist */,
+				A35470D027DB6DD4008F7A36 /* Extension */,
+				A35470CD27DB6B5B008F7A36 /* AppStorage */,
+				A354709527DB3490008F7A36 /* Network */,
+				A354709427DB347A008F7A36 /* AppDelegate */,
+				A354709327DB3467008F7A36 /* StoryBoard */,
+				A354709227DB3459008F7A36 /* Resource */,
+				A354709127DB3442008F7A36 /* Home */,
 			);
 			path = WalE;
+			sourceTree = "<group>";
+		};
+		A354709127DB3442008F7A36 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A35470CA27DB6271008F7A36 /* Model */,
+				A35470C527DB5C8C008F7A36 /* Network */,
+				A35470C227DB5475008F7A36 /* Controller */,
+				A35470BF27DB5460008F7A36 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A354709227DB3459008F7A36 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A354708B27DB3370008F7A36 /* Info.plist */,
+				A354708627DB3370008F7A36 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A354709327DB3467008F7A36 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A354708827DB3370008F7A36 /* LaunchScreen.storyboard */,
+				A354708327DB336C008F7A36 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A354709427DB347A008F7A36 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A354707D27DB336C008F7A36 /* AppDelegate.swift */,
+				A354707F27DB336C008F7A36 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A354709527DB3490008F7A36 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A35470BA27DB365B008F7A36 /* Manager */,
+				A35470A027DB35CD008F7A36 /* Services */,
+				A354709927DB3585008F7A36 /* Encoding */,
+				A354709627DB3498008F7A36 /* Mock */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A354709627DB3498008F7A36 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A354709727DB3559008F7A36 /* MockURLProtocol.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		A354709927DB3585008F7A36 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				A354709A27DB35A9008F7A36 /* ParameterEncoding.swift */,
+				A354709C27DB35BA008F7A36 /* URLParameterEncoder.swift */,
+				A354709E27DB35C7008F7A36 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		A35470A027DB35CD008F7A36 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A35470AE27DB3613008F7A36 /* EndPointType.swift */,
+				A35470B027DB3620008F7A36 /* Router.swift */,
+				A35470B227DB362B008F7A36 /* HTTPMethod.swift */,
+				A35470B427DB3636008F7A36 /* HTTPTask.swift */,
+				A35470B627DB3640008F7A36 /* Parser.swift */,
+				A35470B827DB364E008F7A36 /* NetworkLogger.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A35470A627DB35F5008F7A36 /* WalETests */ = {
+			isa = PBXGroup;
+			children = (
+				A35470A727DB35F5008F7A36 /* WalETests.swift */,
+				A35470D727E08014008F7A36 /* RouterTests.swift */,
+				A35470DE27E08535008F7A36 /* TestDataHelper.swift */,
+			);
+			path = WalETests;
+			sourceTree = "<group>";
+		};
+		A35470BA27DB365B008F7A36 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A35470BB27DB366C008F7A36 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A35470BF27DB5460008F7A36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A35470C027DB5470008F7A36 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A35470C227DB5475008F7A36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A35470C327DB5486008F7A36 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A35470C527DB5C8C008F7A36 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A35470C627DB60D2008F7A36 /* HomeAPI.swift */,
+				A35470C827DB6249008F7A36 /* HomeNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A35470CA27DB6271008F7A36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A35470CB27DB627C008F7A36 /* ApodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A35470CD27DB6B5B008F7A36 /* AppStorage */ = {
+			isa = PBXGroup;
+			children = (
+				A35470CE27DB6B72008F7A36 /* Storage.swift */,
+			);
+			path = AppStorage;
+			sourceTree = "<group>";
+		};
+		A35470D027DB6DD4008F7A36 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A35470D127DB6DE7008F7A36 /* Encodable+Extension.swift */,
+				A35470D527DB8C49008F7A36 /* Date+Extension.swift */,
+				A35470ED27E09E03008F7A36 /* viewcontroller+extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +318,24 @@
 			productReference = A354707A27DB336C008F7A36 /* WalE.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A35470A427DB35F5008F7A36 /* WalETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A35470AB27DB35F5008F7A36 /* Build configuration list for PBXNativeTarget "WalETests" */;
+			buildPhases = (
+				A35470A127DB35F5008F7A36 /* Sources */,
+				A35470A227DB35F5008F7A36 /* Frameworks */,
+				A35470A327DB35F5008F7A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A35470AA27DB35F5008F7A36 /* PBXTargetDependency */,
+			);
+			name = WalETests;
+			productName = WalETests;
+			productReference = A35470A527DB35F5008F7A36 /* WalETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +348,10 @@
 				TargetAttributes = {
 					A354707927DB336C008F7A36 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					A35470A427DB35F5008F7A36 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A354707927DB336C008F7A36;
 					};
 				};
 			};
@@ -116,6 +369,7 @@
 			projectRoot = "";
 			targets = (
 				A354707927DB336C008F7A36 /* WalE */,
+				A35470A427DB35F5008F7A36 /* WalETests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +385,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A35470A327DB35F5008F7A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +399,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A354708227DB336C008F7A36 /* ViewController.swift in Sources */,
+				A35470AF27DB3613008F7A36 /* EndPointType.swift in Sources */,
 				A354707E27DB336C008F7A36 /* AppDelegate.swift in Sources */,
+				A354709D27DB35BA008F7A36 /* URLParameterEncoder.swift in Sources */,
+				A35470CF27DB6B72008F7A36 /* Storage.swift in Sources */,
+				A35470CC27DB627C008F7A36 /* ApodModel.swift in Sources */,
+				A35470B127DB3620008F7A36 /* Router.swift in Sources */,
+				A35470B927DB364E008F7A36 /* NetworkLogger.swift in Sources */,
+				A354709B27DB35A9008F7A36 /* ParameterEncoding.swift in Sources */,
 				A354708027DB336C008F7A36 /* SceneDelegate.swift in Sources */,
+				A35470B527DB3636008F7A36 /* HTTPTask.swift in Sources */,
+				A35470EE27E09E04008F7A36 /* viewcontroller+extension.swift in Sources */,
+				A35470C927DB6249008F7A36 /* HomeNetworkManager.swift in Sources */,
+				A35470D627DB8C49008F7A36 /* Date+Extension.swift in Sources */,
+				A35470B727DB3640008F7A36 /* Parser.swift in Sources */,
+				A35470BC27DB366C008F7A36 /* NetworkManager.swift in Sources */,
+				A35470D227DB6DE7008F7A36 /* Encodable+Extension.swift in Sources */,
+				A35470C427DB5486008F7A36 /* HomeViewController.swift in Sources */,
+				A35470C727DB60D2008F7A36 /* HomeAPI.swift in Sources */,
+				A354709F27DB35C7008F7A36 /* JSONParameterEncoder.swift in Sources */,
+				A35470B327DB362B008F7A36 /* HTTPMethod.swift in Sources */,
+				A35470C127DB5471008F7A36 /* HomeViewModel.swift in Sources */,
+				A354709827DB3559008F7A36 /* MockURLProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35470A127DB35F5008F7A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35470DC27E0850D008F7A36 /* ParameterEncoding.swift in Sources */,
+				A35470E227E08565008F7A36 /* Date+Extension.swift in Sources */,
+				A35470DF27E08535008F7A36 /* TestDataHelper.swift in Sources */,
+				A35470E427E0856C008F7A36 /* NetworkManager.swift in Sources */,
+				A35470D827E08014008F7A36 /* RouterTests.swift in Sources */,
+				A35470E127E08562008F7A36 /* Encodable+Extension.swift in Sources */,
+				A35470E927E0857D008F7A36 /* NetworkLogger.swift in Sources */,
+				A35470EB27E08590008F7A36 /* HomeAPI.swift in Sources */,
+				A35470E527E0856E008F7A36 /* EndPointType.swift in Sources */,
+				A35470E327E08567008F7A36 /* Storage.swift in Sources */,
+				A35470E627E08573008F7A36 /* HTTPMethod.swift in Sources */,
+				A35470E027E0855F008F7A36 /* ApodModel.swift in Sources */,
+				A35470A827DB35F5008F7A36 /* WalETests.swift in Sources */,
+				A35470DB27E084FF008F7A36 /* Router.swift in Sources */,
+				A35470E727E08576008F7A36 /* HTTPTask.swift in Sources */,
+				A35470DD27E08516008F7A36 /* URLParameterEncoder.swift in Sources */,
+				A35470EC27E08596008F7A36 /* HomeViewModel.swift in Sources */,
+				A35470D927E084E7008F7A36 /* HomeNetworkManager.swift in Sources */,
+				A35470E827E08579008F7A36 /* Parser.swift in Sources */,
+				A35470DA27E084F8008F7A36 /* MockURLProtocol.swift in Sources */,
+				A35470EA27E08585008F7A36 /* JSONParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A35470AA27DB35F5008F7A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A354707927DB336C008F7A36 /* WalE */;
+			targetProxy = A35470A927DB35F5008F7A36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A354708327DB336C008F7A36 /* Main.storyboard */ = {
@@ -291,7 +607,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9F74DV2E79;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WalE/Info.plist;
+				INFOPLIST_FILE = WalE/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +635,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9F74DV2E79;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WalE/Info.plist;
+				INFOPLIST_FILE = WalE/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,6 +651,52 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A35470AC27DB35F5008F7A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F74DV2E79;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vishal.WalETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalE.app/WalE";
+			};
+			name = Debug;
+		};
+		A35470AD27DB35F5008F7A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F74DV2E79;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vishal.WalETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalE.app/WalE";
 			};
 			name = Release;
 		};
@@ -355,6 +717,15 @@
 			buildConfigurations = (
 				A354708F27DB3370008F7A36 /* Debug */,
 				A354709027DB3370008F7A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A35470AB27DB35F5008F7A36 /* Build configuration list for PBXNativeTarget "WalETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A35470AC27DB35F5008F7A36 /* Debug */,
+				A35470AD27DB35F5008F7A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

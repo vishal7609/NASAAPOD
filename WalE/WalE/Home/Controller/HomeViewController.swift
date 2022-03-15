@@ -9,21 +9,30 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var lblDesc: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var imgApod: UIImageView!
+
+    lazy var viewModel: HomeViewModel = {
+        return HomeViewModel()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.addListner()
+        viewModel.fetchAPOD()
     }
-    
 
-    /*
-    // MARK: - Navigation
+    func addListner() {
+        viewModel.setupView = { [weak self] apodModel, imageData in
+            self?.lblTitle.text = apodModel.title
+            self?.lblDesc.text = apodModel.explanation
+            self?.imgApod.image = UIImage(data: imageData)
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        viewModel.showError = { [weak self] message in
+            self?.alert(message: message)
+        }
     }
-    */
 
 }
